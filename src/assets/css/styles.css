@@ -338,3 +338,32 @@ nav .cta-link {
   font-weight: 700;
   text-align: right;
 }
+
+/* CTA Section */
+
+.cta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cta .subheader {
+  color: #596D2F;
+  font-size: 1.5rem;
+  text-align: center;
+
+  margin-bottom: 4rem;
+}
+
+.cta .cta-link {
+  max-width: 600px;
+  font-size: 1.5rem;
+}
