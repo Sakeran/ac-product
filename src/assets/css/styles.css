@@ -36,6 +36,7 @@ h3 {
 img {
   width: 100%;
   height: auto;
+  max-width: 512px;
 }
 
 p {
@@ -190,7 +191,7 @@ nav .cta-link {
 
 .service-step {
   flex: 0 0 100%;
-  
+
   max-width: calc(calc(1200px - 3rem) / 3);
   margin-bottom: 1rem;
 
@@ -457,5 +458,23 @@ footer a {
 
   .service-step {
     margin-right: 1rem;
+  }
+
+  /* Pitch */
+
+  .pitch {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-template-areas: "text img" "text .";
+  }
+
+  .pitch-text {
+    grid-area: text;
+    padding-left: 2rem;
+  }
+
+  .pitch-image {
+    grid-area: img;
+    place-self: center;
   }
 }
