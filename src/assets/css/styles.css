@@ -356,7 +356,7 @@ nav .cta-link {
 }
 
 .cta .subheader {
-  color: #596D2F;
+  color: #596d2f;
   font-size: 1.5rem;
   text-align: center;
 
@@ -385,4 +385,52 @@ footer p {
 
 footer a {
   color: white;
+}
+
+@media screen and (min-width: 875px) {
+  /*  Header Component */
+  
+  header {
+    display: flex;
+
+    align-items: center;
+  }
+
+  .nav-toggle-checkbox,
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    transform: none;
+
+    border: none;
+
+    flex-direction: row;
+  }
+
+  nav > * {
+    opacity: 1;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0;
+
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .nav-links li {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  nav .cta-link {
+    width: max-content;
+  }
 }
