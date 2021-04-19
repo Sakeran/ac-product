@@ -15,7 +15,23 @@
   <body>
     <!-- HEADER -->
     <header>
-      <h1>PetSomething</h1>
+      <h1 class="logo">
+        <span class="logo-pet">Pet</span
+        ><span class="logo-something">Something</span>
+      </h1>
+      <input
+        class="nav-toggle-checkbox"
+        type="checkbox"
+        name="toggle-nav"
+        id="toggle-nav"
+      />
+      <label class="nav-toggle-label" for="toggle-nav" aria-label="Toggle Nav"
+        ><svg viewBox="0 0 100 80" width="48" height="48">
+          <rect rx="8" ry="8" width="100" height="15"></rect>
+          <rect rx="8" ry="8" y="30" width="100" height="15"></rect>
+          <rect rx="8" ry="8" y="60" width="100" height="15"></rect></svg
+      ></label>
+
       <nav>
         <ul class="nav-links">
           <li><a href="#">Dogs</a></li>

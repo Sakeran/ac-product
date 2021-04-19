@@ -4,6 +4,146 @@
   box-sizing: border-box;
 }
 
+:root {
+  --logo-purple: #8C3EDB;
+  --logo-green: #596D2F;
+
+  --header-green: #658E0E;
+  --header-green-dark: #46610a;
+  --accent-pink: #DB3E8C;
+  --accent-pink-dark: #c22473;
+  --bg-purple: #643C8C;
+}
+
 body {
   font-family: "Lora", serif;
 }
+
+/* COMMON ELEMENTS */
+
+.cta-link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: var(--accent-pink);
+
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.cta-link:hover, .cta-link:focus {
+  background-color: var(--accent-pink-dark);
+}
+
+/* HEADER */
+
+header {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.logo-pet {
+  color: var(--logo-purple);
+}
+
+.logo-something {
+  color: var(--logo-green);
+}
+
+nav {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform-origin: top;
+  transform: scaleY(0);
+
+  transition: transform 0.25s ease-in-out;
+
+  border-bottom: 1px solid var(--accent-pink-dark);
+}
+
+nav > * {
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+.nav-toggle-checkbox:checked ~ nav {
+  transform: scaleY(1);
+}
+
+.nav-toggle-checkbox:checked ~ nav > * {
+  opacity: 1;
+}
+
+.nav-links {
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 1rem;
+
+  list-style: none;
+}
+
+.nav-links li {
+  margin-bottom: 1rem;
+}
+
+.nav-links a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+  color: var(--accent-pink);
+}
+
+nav .cta-link {
+  margin: 1rem 0;
+}
+
+.nav-toggle-checkbox {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.nav-toggle-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4rem;
+  height: 4rem;
+
+  fill: var(--header-green);
+  
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+
+  cursor: pointer;
+}
+
+.nav-toggle-label:hover, .nav-toggle-label:focus {
+  fill: var(--header-green-dark);
+}
+
