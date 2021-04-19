@@ -445,7 +445,7 @@ footer a {
 
   .nav-links li {
     margin: 0;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
 
   nav .cta-link {
@@ -467,10 +467,16 @@ footer a {
 
   /* Pitch */
 
+  .pitch-wrapper {
+    padding: 8rem 0;
+  }
+
   .pitch {
     display: grid;
     grid-template-columns: 8fr 4fr;
     grid-template-areas: "text img" "text .";
+
+    font-size: 1.125rem;
   }
 
   .pitch-text {
