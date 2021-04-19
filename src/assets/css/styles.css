@@ -497,4 +497,34 @@ footer a {
     display: flex;
     justify-content: space-evenly;
   }
+
+  /* Testimonial Section */
+
+  .testimonials-wrapper {
+    padding: 4rem 0;
+  }
+
+  .testimonials h2 {
+    text-align: left;
+    font-size: 4rem;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .testimonial {
+    min-height: 200px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .testimonial .name {
+    margin: 0;
+  }
 }
