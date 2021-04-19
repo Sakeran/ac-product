@@ -304,3 +304,37 @@ nav .cta-link {
   background-color: #b0e936;
   padding: 1.5rem 1rem;
 }
+
+/* Testimonials Section */
+
+.testimonials-wrapper {
+  background-color: var(--header-green-dark);
+  padding: 2rem 0;
+  margin-top: 2rem;
+
+  clip-path: polygon(0 1rem, 100% 0, 100% 100%, 0 100%);
+}
+
+.testimonials {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.testimonials h2 {
+  color: white;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 0.5rem;
+}
+
+.testimonial .name {
+  color: var(--accent-pink);
+  font-weight: 700;
+  text-align: right;
+}
